@@ -1,0 +1,161 @@
+
+/* Universal */
+
+body{
+  background-color: #20D0BB;
+  overflow-x: hidden;
+}
+
+
+/* heading properties */
+
+.heading{
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  
+}
+
+.head_prop{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #FCEFEF;
+}
+
+.odd{
+  margin-left: 20px;
+}
+
+.even{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #FCEFEF;
+  color: #20D0BB;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top: -10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+/* Grid */
+
+.grid{
+  display: grid;
+  width: fit-content;
+  grid-template-columns: 120px 120px 120px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.cell{
+  width: 120px;
+  height: 120px;
+  border: 3.5px solid #1C9384;
+}
+
+.cell:first-child, .cell:nth-child(2), .cell:nth-child(3){
+  border-top: none;
+} 
+
+.cell:nth-child(3n){
+  border-right: none;
+}
+
+.cell:nth-child(3n+1){
+  border-left: none;
+}
+
+.cell:last-child, .cell:nth-child(7), .cell:nth-child(8){
+  border-bottom: none;
+}
+
+
+/* Stats */
+
+.stats{
+  margin-top: 90px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #28464B;
+  text-align: center;
+  align-items: center;
+}
+
+.tie{
+  color: #FCEFEF;
+  background-color: #28464B;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.score{
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.player{
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 700;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.icon{
+  margin-left: 10px;
+}
+
+
+/* Moves X and O */
+
+/* cross */
+.cross_hover{  
+  opacity: 0.5;
+}
+
+.cross_click{
+  opacity: 1;
+}
+
+/* circle */
+.circle_hover{  
+  opacity: 0.5;
+}
+
+.circle_click{
+  opacity: 1;
+}
+
+
+/* decorations */
+.d_cross{
+  position: absolute;
+  right: 1200px;
+  top: 300px;
+
+}
+
+.d_circle{
+  position: absolute;
+  left: 1200px;
+  top: 300px;
+
+}
+
+.icon{
+  cursor: pointer;
+}
