@@ -1,0 +1,140 @@
+body{
+    background-color: #282D32;
+    align-items: center;
+}
+
+/* container */
+
+.contain{
+
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 2.2vw;
+    margin-bottom: 2.2vw;
+    
+}
+
+.logo{
+    font-size: 30px;
+    color: #E8E9EB;
+    font-family: "Rosario",sans-serif;
+    margin-bottom: 15px;
+}
+
+.board{
+
+    display: flex;
+    
+    background-color: #32363B;
+    padding: 1.4vw;
+    position: absolute;
+    height: fit-content;
+    /* height: 41.4vw; */
+    width: 85vw;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* Image */
+
+.img_area{
+    width: 85%;
+    background-color: white;
+    opacity: 0.2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+/* Tools  */
+
+/* upper tools */
+.upper_tools{
+    margin-left: 1vw;
+    display: grid;
+    grid-template-columns: 5.2vw 5.2vw 4.2vw;
+}
+
+.tool_btn{    
+    background-color: white;
+    height: 4.2vw;
+    width: 4.2vw;
+    margin-bottom: 1vw;    
+}
+
+
+/* dropper */
+.dropper{
+    margin-left: 1vw;
+    display: grid;
+    grid-template-columns: 5.2vw 9.4vw;
+}
+
+.dropper_btn{
+    background-color: #23272A;
+    height: 4.2vw;
+    width: 9.4vw;
+    margin-bottom: 1vw;    
+}
+
+/* down tools */
+.down_tools{
+    margin-left: 1vw;
+    display: grid;
+    grid-template-columns: 10.4vw 4.2vw;
+}
+
+.filter{
+    background-color: #108D7E;
+    height: 7.4vw;
+    width: 9.4vw;
+    margin-bottom: 1vw;    
+}
+
+.set{
+    background-color: #7A232D;
+    height: 4.2vw;
+    width: 9.4vw;
+    margin-bottom: 1vw;    
+}
+
+.slider_btn{
+    background-color: #23272A;
+    height: 12.7vw;
+    width: 4.2vw;
+    margin-bottom: 1vw;    
+}
+
+
+/* download */
+.download{
+    margin-left: 1vw;
+    display: grid;
+}
+
+.download_btn{
+    background-color: #9C0D38;
+    height: 4.2vw;
+    width: 14.6vw;  
+}
+
+.border_btn{
+    border: 2px solid white;
+}
+
+.round_btn{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
