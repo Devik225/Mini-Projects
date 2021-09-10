@@ -15,7 +15,7 @@ body{
 }
 
 .logo{
-    font-size: 30px;
+    font-size: 32px;
     color: #E8E9EB;
     font-family: "Rosario",sans-serif;
     margin-bottom: 15px;
@@ -26,7 +26,7 @@ body{
     display: flex;
     
     background-color: #32363B;
-    padding: 1.4vw;
+    padding: 1.2vw;
     position: absolute;
     height: fit-content;
     /* height: 41.4vw; */
@@ -69,6 +69,7 @@ body{
     height: 4.2vw;
     width: 4.2vw;
     margin-bottom: 1vw;    
+    cursor: pointer;
 }
 
 
@@ -80,11 +81,24 @@ body{
 }
 
 .dropper_btn{
+    padding: 1vw;
     background-color: #23272A;
     height: 4.2vw;
     width: 9.4vw;
-    margin-bottom: 1vw;    
+    margin-bottom: 1vw;  
+    cursor: pointer;  
 }
+
+.input_dropper{
+    color: white;
+    font-size: 16px;
+    margin-left: 0px;
+    width: 7vw;
+    height: 30px;
+    background-color: #ffffff0e;
+    border: none;
+}
+
 
 /* down tools */
 .down_tools{
@@ -97,22 +111,106 @@ body{
     background-color: #108D7E;
     height: 7.4vw;
     width: 9.4vw;
-    margin-bottom: 1vw;    
+    margin-bottom: 1vw;   
+    cursor: pointer; 
 }
 
+/* filter */
+
+.filter_font{
+    padding-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.filter_slide{
+    color: #383F44;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;    
+    background-color: white;
+    justify-content: space-between;
+    width: 120px;
+    height: 35px;
+
+    border-radius: 25px;    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.move_before:hover , .move_after:hover {
+    color: #25292c;
+    font-size: 25px;
+}
+
+
 .set{
+    display: flex;
+    align-items: center;
     background-color: #7A232D;
     height: 4.2vw;
     width: 9.4vw;
     margin-bottom: 1vw;    
+    cursor: pointer;
 }
 
+
+/* set value */
+
+.set_font{
+    color: white;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.input_style{
+    font-size: 14px;
+    margin-left: 10px;
+    width: 40px;
+    height: 20px;
+    background-color: #C4C6C9;
+    border: none;
+}
+
+
 .slider_btn{
+    display: flex;
+    align-items: center;
     background-color: #23272A;
     height: 12.7vw;
     width: 4.2vw;
-    margin-bottom: 1vw;    
+    margin-bottom: 1vw;  
+    cursor: pointer;  
 }
+
+/* slider */
+.range_slide{
+    
+    position:relative;
+    right: 32px;
+    -webkit-transform:rotate(90deg);
+     -moz-transform:rotate(90deg);
+     -o-transform:rotate(90deg);
+     -ms-transform:rotate(90deg);
+     transform:rotate(90deg);
+     width: 220px;
+    
+}
+
 
 
 /* download */
@@ -122,9 +220,24 @@ body{
 }
 
 .download_btn{
-    background-color: #9C0D38;
+    display: flex;
+    background-color: #9C0D38;    
+    color: #E8E9EB;
+    align-items: center;
+    font-family: "Rosario",sans-serif;
     height: 4.2vw;
     width: 14.6vw;  
+    cursor: pointer;
+}
+
+.download_font{
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
 }
 
 .border_btn{
@@ -137,4 +250,89 @@ body{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+
+/* Tools with functionality */
+
+.brightness{
+    background-image: url("svg/brightness.svg");
+    background-color: #DDE0B8;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contrast{
+    background-image: url("svg/contrast.svg");
+    background-color: #D4D4D4;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.border_img{
+    background-image: url("svg/border.svg");
+    background-color: #D9BEA6;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.border_radius{
+    background-image: url("svg/border_radius.svg");
+    background-color: #BCE0B8;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.crop{
+    background-image: url("svg/crop.svg");
+    background-color: #EDD1D1;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.opacity{
+    background-image: url("svg/opacity.svg");
+    background-color: #CCE9E0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.saturation{
+    background-image: url("svg/saturation.svg");
+    background-color: #CBDEB8;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text{
+    background-image: url("svg/text.svg");
+    background-color: #E4E4CB;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rotate{
+    background-image: url("svg/rotate.svg");
+    background-color: #C8D4ED;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dropper_img{
+    background-image: url("svg/dropper.svg");
+    background-color: #8CB7BA;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon{
+    margin-right: 5px;
+}
+
+.tool_btn:hover{
+    box-shadow: 0px 3px 5px rgb(119, 125, 131);
+}
+
+.download_btn:hover{
+    box-shadow: 0px 2px 5px rgb(119, 125, 131);
 }
