@@ -86,14 +86,14 @@ body{
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #28464B;
+  color: #FCEFEF;
   text-align: center;
   align-items: center;
 }
 
 .tie{
-  color: #FCEFEF;
-  background-color: #28464B;
+  color: #242424;
+  background-color: #FCEFEF;
   width: fit-content;
   margin: auto;
   border-radius: 5px;
