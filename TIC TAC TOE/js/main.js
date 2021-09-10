@@ -13,7 +13,7 @@ var p2_win=0;
 var tie = 0;
 
 $(".d_cross").css("opacity", "1");
-$(".d_circle").css("opacity", "0.4");
+$(".d_circle").css("opacity", "0.2");
 
 
 
@@ -25,7 +25,7 @@ $(".cell").click(function (e) {
         if(! (player1.includes(this.id) || player2.includes(this.id)) ){
             $(this).html('<div class="fixed"><img class=" cross_click " src="svg/close.svg" height="110px" style="color: aliceblue; "></img></div>');
             player1.push(this.id);
-            $(".d_cross").css("opacity", "0.4");
+            $(".d_cross").css("opacity", "0.2");
             $(".d_circle").css("opacity", "1");
 
             check(player1);
@@ -40,7 +40,7 @@ $(".cell").click(function (e) {
             $(this).html('<div class="fixed"><img class=" cross_click " src="svg/circle.svg" height="110px" style="color: aliceblue; "></img></div>');
             player2.push(this.id);
             $(".d_cross").css("opacity", "1");
-            $(".d_circle").css("opacity", "0.4");
+            $(".d_circle").css("opacity", "0.2");
 
             check(player2);
             chance = 1;
