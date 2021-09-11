@@ -26,6 +26,14 @@
             <!-- image area -->
             <div class="img_area"> 
 
+                <!-- drop Zone -->
+
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                    <input type="file" name="myFile" class="drop-zone__input">
+                  </div>
+
+
             </div>
 
             <!-- tools area -->
@@ -33,8 +41,8 @@
                 
             <!-- upper tools -->
                 <div class="upper_tools">
-                    <div class="tool_btn brightness"></div>
-                    <div class="tool_btn contrast"></div>
+                    <div class="tool_btn brightness" id="brightness"></div>
+                    <div class="tool_btn contrast" id = "contrast"></div>
                     <div class="tool_btn saturation"></div>
                     <div class="tool_btn opacity"></div>
                     <div class="tool_btn crop"></div>
@@ -49,6 +57,72 @@
                     <div class="tool_btn border_btn dropper_img"></div>
                     <div class="dropper_btn border_btn"><input class="input_dropper" type="text"></div>
                 </div>
+
+            <!-- down tools -->
+                <div class="down_tools">
+
+                <!-- filters and set value -->
+                    <div class="filter_set">
+
+                        <!-- filter -->
+                        <div class="filter border_btn round_btn"> 
+                            
+                            <div class="filter_font">
+                                Filters: 
+                                <!-- filter_slide -->
+                                <div class="filter_slide">
+
+                                    <i class="material-icons move_before" id="p1">  navigate_before  </i>
+
+                                    <div>Laso</div>
+
+                                    <i class="material-icons move_after" id="p1">  navigate_next  </i>
+                                    
+                                    
+                                </div>
+                            </div>
+            
+                        
+                        </div>
+
+                        <!-- set value -->
+                        <div class="set border_btn round_btn"> <div class="set_font"> Set value: <input class="input_style" type="number"> </div> </div>
+                    </div>
+
+                <!-- slider -->
+                    <div class="slider">
+                        <div class="slider_btn border_btn round_btn"> 
+                                                
+                        <input class="input-range" orient="vertical" type="range" step="1" value="5" min="1" max="100">
+
+                        </div>
+                    </div>                    
+                </div>
+
+            <!-- download button -->
+            <div class="download">
+                <div id="download" class="download_btn border_btn round_btn"> <div class="download_font"><i class="material-icons nav_icon icon" id="p1">  download </i>   Download </div> </div>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+<!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
+
 
             <!-- down tools -->
                 <div class="down_tools">
