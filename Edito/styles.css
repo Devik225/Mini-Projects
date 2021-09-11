@@ -5,22 +5,6 @@ body{
 
 /* container */
 
-.contain{
-
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-top: 2.2vw;
-    margin-bottom: 2.2vw;
-    
-}
-
-.logo{
-    font-size: 32px;
-    color: #E8E9EB;
-    font-family: "Rosario",sans-serif;
-    margin-bottom: 15px;
-}
-
 .board{
 
     display: flex;
@@ -39,18 +23,20 @@ body{
     -o-border-radius: 5px;
 }
 
+.contain{
 
-/* Image */
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 2.2vw;
+    margin-bottom: 2.2vw;
+    
+}
 
-.img_area{
-    width: 85%;
-    background-color: white;
-    opacity: 0.2;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+.logo{
+    font-size: 2.2vw;
+    color: #E8E9EB;
+    font-family: "Rosario",sans-serif;
+    margin-bottom: 15px;
 }
 
 
@@ -90,11 +76,12 @@ body{
 }
 
 .input_dropper{
+    display: flex;
     color: white;
-    font-size: 16px;
-    margin-left: 0px;
+    font-size: 1.2vw;
+  
     width: 7vw;
-    height: 30px;
+    height: 2vw;
     background-color: #ffffff0e;
     border: none;
 }
@@ -118,9 +105,9 @@ body{
 /* filter */
 
 .filter_font{
-    padding-top: 10px;
+    padding-top: 0.8vw;
     color: white;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-weight: 500;
     text-align: center;
     align-items: center;
@@ -131,14 +118,15 @@ body{
 .filter_slide{
     color: #383F44;
     display: flex;
+    font-size: 1vw;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.4vw;
     font-weight: 400;    
     background-color: white;
     justify-content: space-between;
-    width: 120px;
-    height: 35px;
+    width: 7vw;
+    height: 2vw;
 
     border-radius: 25px;    
     -webkit-border-radius: 25px;
@@ -169,7 +157,7 @@ body{
 .set_font{
     color: white;
     display: flex;
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: 500;
     text-align: center;
     align-items: center;
@@ -178,10 +166,10 @@ body{
 }
 
 .input_style{
-    font-size: 14px;
+    font-size: 1vw;
     margin-left: 10px;
-    width: 40px;
-    height: 20px;
+    width: 2.6vw;
+    height: 1.4vw;
     background-color: #C4C6C9;
     border: none;
 }
@@ -189,6 +177,7 @@ body{
 
 .slider_btn{
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #23272A;
     height: 12.7vw;
@@ -198,17 +187,25 @@ body{
 }
 
 /* slider */
-.range_slide{
-    
-    position:relative;
-    right: 32px;
-    -webkit-transform:rotate(90deg);
-     -moz-transform:rotate(90deg);
-     -o-transform:rotate(90deg);
-     -ms-transform:rotate(90deg);
-     transform:rotate(90deg);
-     width: 220px;
-    
+.input-range{
+    position: relative;
+    top: 6vw;
+    width: 10vw;
+    height: 0.6vw;
+    border-radius: 25px;
+    -webkit-appearance: none;
+    background-color: #ffffff17;
+    cursor:grab;
+
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 
@@ -224,7 +221,6 @@ body{
     background-color: #9C0D38;    
     color: #E8E9EB;
     align-items: center;
-    font-family: "Rosario",sans-serif;
     height: 4.2vw;
     width: 14.6vw;  
     cursor: pointer;
@@ -232,7 +228,7 @@ body{
 
 .download_font{
     display: flex;
-    font-size: 22px;
+    font-size: 1.5vw;
     font-weight: 500;
     text-align: center;
     align-items: center;
@@ -257,6 +253,7 @@ body{
 
 .brightness{
     background-image: url("svg/brightness.svg");
+    background-size: 2vw;
     background-color: #DDE0B8;
     background-repeat: no-repeat;
     background-position: center;
@@ -264,6 +261,7 @@ body{
 
 .contrast{
     background-image: url("svg/contrast.svg");
+    background-size: 2vw;
     background-color: #D4D4D4;
     background-repeat: no-repeat;
     background-position: center;
@@ -271,6 +269,7 @@ body{
 
 .border_img{
     background-image: url("svg/border.svg");
+    background-size: 2vw;
     background-color: #D9BEA6;
     background-repeat: no-repeat;
     background-position: center;
@@ -278,6 +277,7 @@ body{
 
 .border_radius{
     background-image: url("svg/border_radius.svg");
+    background-size: 2vw;
     background-color: #BCE0B8;
     background-repeat: no-repeat;
     background-position: center;
@@ -285,6 +285,7 @@ body{
 
 .crop{
     background-image: url("svg/crop.svg");
+    background-size: 2vw;
     background-color: #EDD1D1;
     background-repeat: no-repeat;
     background-position: center;
@@ -292,6 +293,7 @@ body{
 
 .opacity{
     background-image: url("svg/opacity.svg");
+    background-size: 2vw;
     background-color: #CCE9E0;
     background-repeat: no-repeat;
     background-position: center;
@@ -299,6 +301,7 @@ body{
 
 .saturation{
     background-image: url("svg/saturation.svg");
+    background-size: 2vw;
     background-color: #CBDEB8;
     background-repeat: no-repeat;
     background-position: center;
@@ -306,6 +309,7 @@ body{
 
 .text{
     background-image: url("svg/text.svg");
+    background-size: 2vw;
     background-color: #E4E4CB;
     background-repeat: no-repeat;
     background-position: center;
@@ -313,6 +317,7 @@ body{
 
 .rotate{
     background-image: url("svg/rotate.svg");
+    background-size: 2vw;
     background-color: #C8D4ED;
     background-repeat: no-repeat;
     background-position: center;
@@ -320,6 +325,7 @@ body{
 
 .dropper_img{
     background-image: url("svg/dropper.svg");
+    background-size: 2vw;
     background-color: #8CB7BA;
     background-repeat: no-repeat;
     background-position: center;
@@ -335,4 +341,75 @@ body{
 
 .download_btn:hover{
     box-shadow: 0px 2px 5px rgb(119, 125, 131);
+}
+
+
+/* image drop */
+
+
+.img_area{
+    width: 85%;
+    background-color: #5B5E62;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.drop-zone {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #343A40;
+  }
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+
+    background-size: cover;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+  
+
+    .filter_brightness{
+      filter: brightness(40%);
+      -webkit-filter: brightness(40%);
 }
