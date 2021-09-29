@@ -58,7 +58,7 @@ body{
 .cell{
   width: 120px;
   height: 120px;
-  border: 3.5px solid #FCEFEF;
+  border: 3.5px solid #000000;
 }
 
 .cell:first-child, .cell:nth-child(2), .cell:nth-child(3){
